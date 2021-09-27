@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#site-wrap{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr
+                           repeat(6,minmax(0,272px))
+                           1fr;
+    grid-gap: 5px;
+    grid-template-rows: 150px 75px 373px 373px 373px 373px 1fr;
+    grid-template-areas: "title title . . . . . ."
+                         ". . . . . . . ."
+                         ". intro intro intro intro profile profile ."
+                         ". portfolio portfolio portfolio portfolio portfolio portfolio ."
+                         ". interests interests interests interests interests interests ."
+                         ". about about about about about about ."
+                         ". . . . . . . .";
+}
+
+.title{
+    background-color: #D4ECDD;
+    grid-area: title;
+}
+
+.intro{
+    background-color: #B85C38;
+    grid-area: intro;
+}
+
+.profile{
+    background-color: aqua;
+    grid-area: profile;
+}
+
+.portfolio{
+    background-color: #152D35;
+    grid-area: portfolio;
+}
+
+.interests{
+    background-color: #A35709;
+    grid-area: interests;
+}
+
+.about{
+    background-color: #112031;
+    grid-area: about;
+}
+
+.intro-list{
+    text-align: center;
+    
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@media screen and (max-width:1480px){
+    
+    #site-wrap{
+        grid-template-areas: 
+                         "title title title title title title title title"
+                         ". . . . . . . ."
+                         "intro intro intro intro intro intro intro intro"
+                         "portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio"
+                         "interests interests interests interests interests interests interests interests"
+                         "about about about about about about about about"
+                         ". . . . . . . .";
+    }
+    .profile{
+        display: none;
+    }
+}
