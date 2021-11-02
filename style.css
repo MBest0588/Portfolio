@@ -44,6 +44,70 @@ main{
     grid-area: portfolio;
 }
 
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.containers{
+    display: none;
+}
+
+.back .forward{
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.forward{
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.back:hover .forward:hover {
+    background-color: white;
+}
+
+.MessageInfo{
+    color: white;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+
+.dots{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable .dots:hover{
+    background-color: #717161;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
 .interests{
     background-color: #A35709;
     grid-area: interests;
@@ -65,6 +129,16 @@ main{
     margin-right: auto;
     width: 100%;
     height: auto;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 2}
+}
+
+@keyframes fade{
+    from {opacity: 0.5}
+    to {opacity: 2}
 }
 
 @media screen and (max-width:1480px){
