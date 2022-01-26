@@ -1,0 +1,5 @@
+Why  a  CAPSTONE  customer might want you to use a private repository rather than a public one.
+
+A capstone customer might prefer to use a private repository for a number of reasons. For example, the customer is likely working for a company that would like to retain the rights to the project and protect it from public use. They might do this as it could expose a potential security threat, or they might just want to protect the code as it is central to one of their products. Such as an account system addon to their current site.
+
+Certain capstone customers may also prefer open source project, as it allows the community to be involved and suggest adjustments to the project as its being made. This can lead to a better product at launch than a private project, as the comminuty involved has suggested improvements throughout development. 
